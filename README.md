@@ -1,0 +1,2 @@
+# jegyzetkezel-
+Jegyzeteket kezel
