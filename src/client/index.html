@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jegyzetkezelő</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Jegyzetkezelő alkalmazás</h1>
+
+    <div class="auth-bar">
+      <span id="authStatus">Nincs bejelentkezve</span>
+      <button id="openAuthBtn">Bejelentkezés / Regisztráció</button>
+      <button id="logoutBtn" class="hidden">Kijelentkezés</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <section class="new-note">
+        <h2>Új jegyzet</h2>
+
+        <form id="noteForm">
+          <label for="title">Cím:</label><br />
+          <input type="text" id="title" name="title" /><br /><br />
+
+          <label for="content">Tartalom:</label><br />
+          <textarea id="content" name="content" rows="6"></textarea><br /><br />
+
+          <button type="submit">Mentés</button>
+          <p id="noteMsg" class="msg"></p>
+        </form>
+      </section>
+
+      <section class="notes">
+        <h2>Saját jegyzeteim</h2>
+        <div id="notesList"></div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Egyszerű auth modal -->
+  <div id="authModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Bejelentkezés / Regisztráció</h2>
+
+      <label>Email</label>
+      <input id="email" type="email" placeholder="email@example.com" />
+
+      <label>Jelszó</label>
+      <input id="password" type="password" placeholder="min. 6 karakter" />
+
+      <div class="modal-actions">
+        <button id="loginBtn">Bejelentkezés</button>
+        <button id="registerBtn">Regisztráció</button>
+        <button id="closeAuthBtn">Bezár</button>
+      </div>
+
+      <p id="authMsg" class="msg"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Jegyzetkezelő</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

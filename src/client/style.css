@@ -1,0 +1,146 @@
+.hidden { display: none; }
+
+/* Alap beállítások */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Fejléc */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Fő tartalom */
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Új jegyzet panel */
+.new-note {
+    background-color: white;
+    padding: 15px;
+    width: 35%;
+    border-radius: 5px;
+}
+
+.new-note input,
+.new-note textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.new-note button {
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.new-note button:hover {
+    background-color: #2980b9;
+}
+
+/* Jegyzetlista */
+.notes {
+    background-color: white;
+    padding: 15px;
+    width: 65%;
+    border-radius: 5px;
+}
+
+.note {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.note h3 {
+    margin-top: 0;
+}
+
+/* Lábléc */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.auth-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.msg {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  padding: 16px;
+  border-radius: 6px;
+  width: 360px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Biztosan elrejti a modalt, ha rajta van a hidden */
+.modal.hidden {
+  display: none;
+}
