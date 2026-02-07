@@ -45,7 +45,7 @@ A projekt célja egy teljes, dokumentált szoftverfejlesztési folyamat bemutat�
 ### 1. Projekt klónozása
 ```bash
 git clone <repository-url>
-cd notes-app
+cd jegyzetkezel-
 ```
 
 ### 2. Függőségek telepítése
